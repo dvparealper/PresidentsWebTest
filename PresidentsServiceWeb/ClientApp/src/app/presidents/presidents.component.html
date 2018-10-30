@@ -1,0 +1,25 @@
+<table>
+  <tr>
+    <th><span>Name</span><span><img src="assets/arrow_{{sort}}.png" (click)="sortPresidents()" class="imageStyle" /></span></th>
+    <th>Birthday</th>
+    <th>Birthplace</th>
+    <th>Deathday</th>
+    <th>Deathplace</th>
+  </tr>
+  <tbody *ngFor="let president of presidents; index as i">
+    <tr *ngIf="i % 2 === 0" class="even">
+      <td>{{president.name}}</td>
+      <td>{{president.birthday}}</td>
+      <td>{{president.birthplace}}</td>
+      <td>{{president.deathday}}</td>
+      <td>{{president.deathplace}}</td>
+    </tr>
+    <tr *ngIf="i % 2 !== 0" class="odd">
+      <td>{{president.name}}</td>
+      <td>{{president.birthday}}</td>
+      <td>{{president.birthplace}}</td>
+      <td>{{president.deathday}}</td>
+      <td>{{president.deathplace}}</td>
+    </tr>
+  </tbody>
+</table>

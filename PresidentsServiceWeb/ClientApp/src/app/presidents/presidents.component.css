@@ -1,0 +1,22 @@
+.odd {
+  background-color: white;
+}
+
+.even {
+  background-color: aliceblue;
+}
+
+table td {
+  height: 32px;
+  white-space: nowrap;
+}
+
+table th {
+  height: 32px;
+  text-align: center;
+}
+
+.imageStyle {
+  height: 16px;
+  padding-left: 5px;
+}
